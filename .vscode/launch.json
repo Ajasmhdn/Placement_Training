@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/HP/OneDrive/Desktop/Placement Programs",
-      "program": "c:/Users/HP/OneDrive/Desktop/Placement Programs/build/Debug/outDebug",
+      "cwd": "c:/Users/HP/OneDrive/Desktop/Placement/Placement_Training",
+      "program": "c:/Users/HP/OneDrive/Desktop/Placement/Placement_Training/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
