@@ -2,39 +2,44 @@
 
 int main()
 {
-    int n;
+    int n, flag = 0,ss=0;
     printf("Enter the size: ");
     scanf("%d", &n);
 
-    int arr[n], temp = 0;
+    int arr[n], small;
     printf("Enter the elements: ");
     for (int i = 0; i < n; i++)
     {
         scanf("%d", &arr[i]);
     }
+    small = arr[0];
 
-    // Bubble Sort
-    for (int i = 0; i < n - 1; i++)
+    for (int i = 1; i < n; i++)
     {
-        for (int j = 0; j < n - i - 1; j++)
+
+        if (arr[i] < small)
         {
-            if (arr[j] > arr[j + 1])
-            {
-                temp = arr[j];
-                arr[j] = arr[j + 1];
-                arr[j + 1] = temp;
-            }
+            ss = small;
+            small = arr[i];
+        }
+
+        // this statement only executes once
+
+        else if (flag == 0 && ss==0)
+        {
+            ss = arr[i];
+            flag = 1;
+        }
+        // this statement intiliazes the ss
+        else if (arr[i] < ss)
+        {
+            ss = arr[i];
         }
     }
 
-    printf("Sorted array: ");
-    for (int i = 0; i < n; i++)
-    {
-        printf("%d ", arr[i]);
-    }
     printf("\n");
-    printf("%d\n ", arr[0]);
-     printf("%d ", arr[1]);
+    printf("%d\n ", small);
+    printf("%d ", ss);
 
     return 0;
 }
