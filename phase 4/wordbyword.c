@@ -14,15 +14,8 @@ int main()
 
         if (a[i] == ' ')
         {
-            for(int k = start; k <= end - 1; k++){
+            for (int k = start; k <= end - 1; k++)
                 printf("%c", a[k]);
-                     if (a[k] >= 97 && a[k] <= 122)
-            printf("%c",a[k]);
-        else
-            printf("%c",a[k]+32);
-    }
-
-                }
 
             printf("\n");
             start = end + 1;
@@ -35,3 +28,4 @@ int main()
             end++;
         }
     }
+}
