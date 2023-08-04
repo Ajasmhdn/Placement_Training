@@ -10,7 +10,7 @@ for(int i=0;a[i];i++){
 en[a[i]-97]=b[i];
 
 }
-for(int i=0;i<26;i++){
+for(int i=0;i<26;i++){// -2147483648 2147483647
 printf("%d - %c\n",i,en[i]);
 
 }
